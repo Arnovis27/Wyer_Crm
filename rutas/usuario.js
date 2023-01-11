@@ -20,6 +20,21 @@ const ModelUsuario= mongoose.model("usuarios", eschemaUsuario)
 module.exports= router;
 
 //rutas
+
+//obtener usuario
+router.get("/obtenerusuario",(req,res)=>{
+    ModelUsuario.find({},function(docs,err){
+        if(!err){
+            res.send(docs)
+        }else{
+            res.send(err)
+        }
+
+    })
+})
+
+
+//agregar usuario
 router.post("/agregarusuario", (req,res)=>{
     const nuevousuario= new ModelUsuario({
         nombres: req.body.nombres,
