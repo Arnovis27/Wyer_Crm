@@ -1,6 +1,6 @@
 const express= require("express");
 const app= express();
-const port= 5000;
+const PORT = process.env.PORT || 5000;
 
 //conexionDB
 const archivoDB= require("./conexion");
@@ -18,6 +18,6 @@ app.get("/",(req,res)=> {
 });
 
 //configurar server basico
-app.listen(port, function(){
-    console.log("El servidor esta corriendo en el puerto "+ port);
+app.listen(PORT, function(){
+    console.log("El servidor esta corriendo en el puerto "+ PORT);
 })
