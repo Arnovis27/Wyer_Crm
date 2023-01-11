@@ -5,7 +5,14 @@ const port= 5000;
 //conexionDB
 const archivoDB= require("./conexion");
 
-//rutas
+const bodyParser= require("body-parser");
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:'true'}))
+
+//importacion rutas y modelo
+const rutasUsuario= require("./rutas/usuario");
+app.use("/api/usuarios/", rutasUsuario);
+
 app.get("/",(req,res)=> {
     res.end("Servidor Backend corriendo");
 });

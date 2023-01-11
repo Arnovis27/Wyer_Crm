@@ -6,9 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Crud Men Stack</h1>
-      
+    <div className="App">      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ListaUsuarios/>} exact></Route>
