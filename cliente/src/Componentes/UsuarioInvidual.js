@@ -1,24 +1,25 @@
 import React from 'react';
-import FooterContact from './Complementos/FooterContact';
 
 function UsuarioIndividual({usuario}){
     return(
-        <div className="container">
-            <div className='flex flex-col h-[100vh] lg:h-[130vh] justify-center items-center pb-[16vh] lg:pb-[20vh] lg:ml-[50px]'>
-                <div className='row'>
-                    <h2 className='font-semibold text-[#006191] ml-[-120px] lg:ml-[-702px] py-[10px] flex-start '>Lista de Contactos</h2>
-                </div>
-                        <div className='w-[90vw] h-[67vh] py-[20px] lg:w-[80vw] lg:h-[90vh] lg:mt-[4vh] container flex flex-col mx-auto items-center justify-between bg-[#F6F6F6] rounded-[33px] relative '>
-                            <div className='relative flex flex-col items-center w-full'>
-                                {usuario.nombres+ " "+usuario.apellidos}
+            <div className="flex flex-col items-center justify-center ">
+                <li className="flex flex-row ">
+                    <div className="select-none w-[90vw] lg:w-[80vw] cursor-pointer flex flex-row justify-between items-center px-[8vw] lg:px-[3vw] py-[1vw]">
+                        <div className="flex flex-col w-[50vw] ">
+                            <div className="w-full font-medium text-[#242424]">
+                                {usuario.nombres + " " + usuario.apellidos}
                             </div>
-                            <div className="text-[#186F9A] text-sm">(+57) {usuario.telefono}</div>
-                        </div>
+                        <div className="text-[#186F9A] text-sm">(+57) {usuario.telefono}</div>
+                    </div>
+                    <div className="flex flex-row justify-end">
+                        <button className="w-[30px] ml-[0px] text-right flex justify-end"><img className="w-[28px]" src="https://res.cloudinary.com/dkagy4g5m/image/upload/v1667407207/wyer/edit_home_itr62p.png" alt="edit_client"/></button>
+                        <button className="w-[30px] ml-[0px] text-right flex justify-end"><img className="w-[28px]" src="https://res.cloudinary.com/dkagy4g5m/image/upload/v1667408152/wyer/check_home_llisg9.png" alt="check_client"/></button>
+                        <button className="w-[30px] ml-[0px] text-right flex justify-end"><img className="w-[30px]" src="https://res.cloudinary.com/dkagy4g5m/image/upload/v1667408227/wyer/delete_home_dox7rt.png" alt="delete_client"/></button>
+                    </div>
+                    </div>
+                </li>
+                
             </div>
-            <div className="fixed bottom-0 w-[100vw]">
-                <FooterContact />
-            </div>
-        </div>
     )
 }
 
