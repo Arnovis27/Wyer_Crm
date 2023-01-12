@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import UsuarioIndividual from './UsuarioInvidual';
 import FooterContact from './Complementos/FooterContact';
+import BotonAgregar from './Complementos/botonagregar';
 
 function ListaUsuarios(){
 
@@ -44,8 +45,11 @@ function ListaUsuarios(){
                 </div>
             </div>
             
-            
             <div className="fixed bottom-0 w-[100vw]">
+                <div className='bg-[#006191] hover:bg-green-800 rounded-full w-48 h-[33px] m-2 ml-[36rem]'>
+                    <BotonAgregar/>
+                </div>
+                
                 <FooterContact />
             </div>
         </div>

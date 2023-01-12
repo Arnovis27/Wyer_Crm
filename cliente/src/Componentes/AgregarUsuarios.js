@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import uniquid from 'uniqid';
 import axios from 'axios';
 import FooterContact from './Complementos/FooterContact';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -37,6 +38,12 @@ function AgregarUsuarios(){
         axios.post("/api/usuarios/agregarusuario",usuario).then(res=>{
             alert(res.data)
         }).then(err => {console.log(err)})
+    }
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/");
     }
 
 
@@ -94,7 +101,7 @@ function AgregarUsuarios(){
                                 </div>
                             </div>
                         <div className="flex flex-row justify-around w-[90vw] lg:w-[80vw]">
-                            <button className='w-[43vw] h-[40px] lg:w-[70vh] my-[15px] bg-[#D1D1D1] hover:bg-blue-700   px-4 rounded-full text-white text-lg font-medium'>Cancelar</button>
+                            <button onClick={handleClick} className='w-[43vw] h-[40px] lg:w-[70vh] my-[15px] bg-[#D1D1D1] hover:bg-blue-700   px-4 rounded-full text-white text-lg font-medium'>Cancelar</button>
                             <button onClick={guardarUsuario} className='w-[43vw] h-[40px] lg:w-[70vh] my-[15px] bg-[#64CD98] hover:bg-blue-700   px-4 rounded-full text-white text-lg font-medium'>Agregar</button>
                         </div>
                 </div>
