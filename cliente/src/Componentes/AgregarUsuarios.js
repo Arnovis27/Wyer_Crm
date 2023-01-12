@@ -38,6 +38,8 @@ function AgregarUsuarios(){
         axios.post("/api/usuarios/agregarusuario",usuario).then(res=>{
             alert(res.data)
         }).then(err => {console.log(err)})
+        
+        navigate("/");
     }
 
     const navigate = useNavigate();
@@ -45,6 +47,7 @@ function AgregarUsuarios(){
     const handleClick = () => {
         navigate("/");
     }
+    
 
 
     return(
