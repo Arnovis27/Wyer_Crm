@@ -1,9 +1,8 @@
 import './App.css';
 import AgregarUsuarios from './Componentes/AgregarUsuarios';
 import ListaUsuarios from './Componentes/ListaUsuarios';
-
-
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import FiltrarUsuario from './Componentes/FiltrarContact';
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ListaUsuarios/>} exact></Route>
           <Route path="/agregarusuario" element={<AgregarUsuarios/>} exact></Route>
+          <Route path='/filtro' element={<FiltrarUsuario/>}exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

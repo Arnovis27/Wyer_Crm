@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import UsuarioIndividual from './UsuarioInvidual';
 import FooterContact from './Complementos/FooterContact';
 import BotonAgregar from './Complementos/botonagregar';
+import FiltrarUsuario from './FiltrarContact';
 
 function ListaUsuarios(){
 
@@ -34,6 +35,9 @@ function ListaUsuarios(){
 
     return(
         <div className="container">
+            <div>
+                <FiltrarUsuario/>
+            </div>
             <div className='flex flex-col h-[100vh] lg:h-[130vh] justify-center items-center pb-[16vh] lg:pb-[20vh] lg:ml-[50px]'>
                 <div className='row'>
                     <h2 className='font-semibold text-[#006191] ml-[-120px] lg:ml-[-702px] py-[10px] flex-start '>Lista de Contactos</h2>
