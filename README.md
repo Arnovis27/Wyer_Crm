@@ -13,5 +13,15 @@ Se puede instalar clonando el repositorio con ```git clone url```
 Para el lado del servidor es indispensable ejecutar el comando ```npm start``` dentro de la ruta actual donde se encuentra ubicado el fichero [server.js](https://github.com/Arnovis27/Wyer_Crm/blob/main/server.js)  
 Para el lado del cliente es necesario acceder dentro de la carpeta [cliente](https://github.com/Arnovis27/Wyer_Crm/tree/main/cliente) con el comando ```cd cliente``` luego de esto, se inicia la aplicacion con el comando ```npm start```  
 
+## Pruebas
+### Read 
+![image](https://github.com/Arnovis27/Wyer_Crm/blob/main/capturas/Lista.PNG)  
+
+### Create
+![image](https://github.com/Arnovis27/Wyer_Crm/blob/main/capturas/formulario.PNG)  
+
+### Filter
+![image](https://github.com/Arnovis27/Wyer_Crm/blob/main/capturas/Filtro.PNG)
+
 ## Estado del proyecto
 Actualmente el proyecto solo cuenta con las funcionalidades requeridas para la prueba, LEER, AGREGAR,BUSCAR
