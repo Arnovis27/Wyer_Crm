@@ -10,7 +10,7 @@ El proyecto se realizo usando las tecnologias React js + Express js + MongoDB + 
 Se puede instalar clonando el repositorio con ```git clone url```  
 Para cargar las librerias que fueron utilizadas ```npm install```, asegurese de estar en la ruta del archivo **package.json**  
 para FRONT-END es la ruta [cliente/package.json](https://github.com/Arnovis27/Wyer_Crm/tree/main/cliente)  
-para BACK-END es la ruta raiz [./package.json](https://github.com/Arnovis27/Wyer_Crm)
+para BACK-END es la ruta donde se encuentra el archivo **server.js** [./package.json](https://github.com/Arnovis27/Wyer_Crm)
 
 ## Como se usa
 Para el lado del servidor que se ejecuta en la ruta **https://localhost:5000/** es indispensable ejecutar el comando ```npm start``` dentro del directorio actual donde se encuentra ubicado el fichero [server.js](https://github.com/Arnovis27/Wyer_Crm/blob/main/server.js)  
